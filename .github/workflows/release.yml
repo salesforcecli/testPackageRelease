@@ -3,22 +3,13 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: lts/*
-      - run: npm install -g sfdx-cli --omit=dev
-      - uses: salesforcecli/github-workflows/.github/actions/gitConfig@main
-      - run: sfdx plugins:install @salesforce/plugin-release-management
-      - uses: salesforcecli/github-workflows/.github/workflows/npmTagAndRelease.yml@npm-publish
-        with:
-          dryrun: true
-          ctc: false
-          sign: false
-          tag: latest
-          github-release: false
-          prerelease: false
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    uses: salesforcecli/github-workflows/.github/workflows/npmTagAndRelease.yml@npm-publish
+    with:
+      dryrun: true
+      ctc: false
+      sign: false
+      tag: latest
+      github-release: false
+      prerelease: false
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
