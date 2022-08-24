@@ -17,11 +17,11 @@ testPlugin117
 <!-- install -->
 <!-- usage -->
 ```sh-session
-$ npm install -g testPlugin117
+$ npm install -g @salesforce/test-plugin117
 $ sfdx COMMAND
 running command...
 $ sfdx (-v|--version|version)
-testPlugin117/0.0.0 darwin-x64 node-v16.3.0
+@salesforce/test-plugin117/1.0.0 linux-x64 node-v16.16.0
 $ sfdx --help [COMMAND]
 USAGE
   $ sfdx COMMAND
@@ -63,7 +63,7 @@ EXAMPLES
   sfdx hello:org --name myname --targetusername myOrg@example.com
 ```
 
-_See code: [src/commands/hello/org.ts](https://github.com/vmundra/testPlugin117/blob/v0.0.0/src/commands/hello/org.ts)_
+_See code: [src/commands/hello/org.ts](https://github.com/vmundra/testPlugin117/blob/v1.0.0/src/commands/hello/org.ts)_
 <!-- commandsstop -->
 <!-- debugging-your-plugin -->
 # Debugging your plugin
