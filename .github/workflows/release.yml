@@ -10,6 +10,6 @@ jobs:
       ctc: false
       sign: false
       tag: latest
-      github-release: false
+      githubRelease: false
       prerelease: false
     secrets: inherit
