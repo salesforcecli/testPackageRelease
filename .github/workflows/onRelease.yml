@@ -1,7 +1,13 @@
 on:
   release:
     types: [published]
-
+  # support manual release in case something goes wrong and needs to be repeated
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: tag that needs to publish
+        type: string
+        required: true
 jobs:
   npm:
     uses: salesforcecli/github-workflows/.github/workflows/npmTagAndRelease.yml@sm/npm-publish
@@ -10,6 +16,6 @@ jobs:
       ctc: false
       sign: false
       tag: latest
-      githubRelease: false
       prerelease: false
+      githubTag: ${{ github.event.release.tag_name || inputs.tag }}
     secrets: inherit
