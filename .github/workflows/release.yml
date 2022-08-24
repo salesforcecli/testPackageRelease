@@ -6,7 +6,7 @@ jobs:
   release:
     uses: salesforcecli/github-workflows/.github/workflows/npmTagAndRelease.yml@sm/npm-publish
     with:
-      dryrun: true
+      dryrun: false
       ctc: false
       sign: false
       tag: latest
