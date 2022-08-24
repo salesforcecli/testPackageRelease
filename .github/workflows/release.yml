@@ -3,7 +3,7 @@ on:
 
 jobs:
   release:
-    uses: salesforcecli/github-workflows/.github/workflows/npmTagAndRelease.yml@npm-publish
+    uses: salesforcecli/github-workflows/.github/workflows/npmTagAndRelease.yml@sm/npm-publish
     with:
       dryrun: true
       ctc: false
