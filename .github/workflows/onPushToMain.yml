@@ -1,0 +1,9 @@
+name: tag and github release
+on:
+  push:
+    branches: [main]
+
+jobs:
+  release:
+    uses: salesforcecli/github-workflows/.github/workflows/githubRelease.yml@sm/npm-publish
+    secrets: inherit
