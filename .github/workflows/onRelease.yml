@@ -1,0 +1,15 @@
+on:
+  release:
+    types: [published]
+
+jobs:
+  npm:
+    uses: salesforcecli/github-workflows/.github/workflows/npmTagAndRelease.yml@sm/npm-publish
+    with:
+      dryrun: false
+      ctc: false
+      sign: false
+      tag: latest
+      githubRelease: false
+      prerelease: false
+    secrets: inherit
