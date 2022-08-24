@@ -1,6 +1,6 @@
 {
   "name": "testPlugin117",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Vamsi-Mundra-Salesforce",
   "bugs": "https://github.com/vmundra/testPlugin117/issues",
   "dependencies": {
@@ -73,5 +73,8 @@
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --extension .ts --require ts-node/register mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif-dev readme && git add README.md"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
