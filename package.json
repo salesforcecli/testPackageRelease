@@ -61,7 +61,9 @@
       }
     },
     "devPlugins": [
-      "@oclif/plugin-help"
+      "@oclif/plugin-help",
+      "@oclif/plugin-command-snapshot",
+      "@salesforce/plugin-command-reference"
     ]
   },
   "repository": "vmundra/testPlugin117",
