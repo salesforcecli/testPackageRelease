@@ -9,6 +9,6 @@ jobs:
     uses: salesforcecli/github-workflows/.github/workflows/githubRelease.yml@sm/npm-publish
     secrets: inherit
   docs:
-    uses: salesforcecli/github-workflows/.github/workflows/publishTypedoc.yml
+    uses: salesforcecli/github-workflows/.github/workflows/publishTypedoc.yml@sm/npm-publish
     secrets: inherit
     needs: release
