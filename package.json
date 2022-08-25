@@ -1,6 +1,6 @@
 {
   "name": "@salesforce/test-plugin117",
-  "version": "1.5.3",
+  "version": "1.6.0",
   "author": "Vamsi-Mundra-Salesforce",
   "bugs": "https://github.com/vmundra/testPlugin117/issues",
   "dependencies": {
