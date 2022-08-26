@@ -10,7 +10,7 @@ on:
         required: true
 jobs:
   npm:
-    uses: salesforcecli/github-workflows/.github/workflows/npmPublish.yml@sm/npm-publish
+    uses: salesforcecli/github-workflows/.github/workflows/npmPublish.yml@main
     with:
       dryrun: false
       ctc: false
