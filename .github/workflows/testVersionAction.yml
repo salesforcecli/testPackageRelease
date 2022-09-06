@@ -1,0 +1,14 @@
+on:
+  push:
+    branches: [main]
+
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: salesforcecli/github-workflows/.github/actions/versionInfo@sm/versioninfo
+        with:
+          version: latest-rc
+      - uses: salesforcecli/github-workflows/.github/actions/versionInfo@sm/versioninfo
+        with:
+          version: 7.166.1
