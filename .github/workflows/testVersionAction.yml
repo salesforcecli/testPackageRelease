@@ -6,6 +6,7 @@ jobs:
   t:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: salesforcecli/github-workflows/.github/actions/versionInfo@sm/versioninfo
         with:
           version: latest-rc
