@@ -1,7 +1,8 @@
-# test
 on:
   workflow_run:
-    workflows: [version, tag and github release, publish]
+    workflows:
+      - version, tag and github release
+      - publish
     types:
       - completed
 
@@ -19,13 +20,13 @@ jobs:
         with:
           payload: |
             {
-              "text": "Release failed: ${{ github.event.workflow_run.repository.name }}",
+              "text": "${{ github.event.workflow_run.name }} failed: ${{ github.event.workflow_run.repository.name }}",
               "blocks": [
                 {
                   "type": "header",
                   "text": {
                     "type": "plain_text",
-                    "text": "Release failed: ${{ github.event.workflow_run.repository.name }}"
+                    "text": "${{ github.event.workflow_run.name }} failed: ${{ github.event.workflow_run.repository.name }}"
                   }
                 },
                 {

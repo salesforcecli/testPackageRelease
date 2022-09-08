@@ -15,11 +15,8 @@ jobs:
   npm:
     uses: salesforcecli/github-workflows/.github/workflows/npmPublish.yml@main
     with:
-      dryrun: false
       ctc: true
       sign: true
       tag: latest
-      prerelease: false
       githubTag: ${{ github.event.release.tag_name || inputs.tag }}
-      runsOn: ubuntu-latest
     secrets: inherit
