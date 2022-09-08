@@ -13,7 +13,7 @@ on:
         required: true
 jobs:
   npm:
-    uses: salesforcecli/github-workflows/.github/workflows/npmPublish.yml@sm/ctc-jobs-in-npm-publish
+    uses: salesforcecli/github-workflows/.github/workflows/npmPublish.yml@main
     with:
       dryrun: false
       ctc: true
