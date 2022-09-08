@@ -18,5 +18,5 @@ jobs:
       tag: latest
       prerelease: false
       githubTag: ${{ github.event.release.tag_name || inputs.tag }}
-      runsOn: static-ip-ubuntu-runners
+      runsOn: ubuntu-latest
     secrets: inherit
