@@ -1,3 +1,5 @@
+name: publish
+
 on:
   release:
     types: [released]
@@ -13,7 +15,7 @@ jobs:
     uses: salesforcecli/github-workflows/.github/workflows/npmPublish.yml@sm/ctc-jobs-in-npm-publish
     with:
       dryrun: false
-      ctc: true
+      ctc: false
       sign: true
       tag: latest
       prerelease: false
