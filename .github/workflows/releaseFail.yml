@@ -18,13 +18,20 @@ jobs:
         with:
           payload: |
             {
-              "text": "Release failed",
+              "text": "Release failed: ${{ github.event.workflow_run.repository.name }}",
               "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "Release failed "
+                  }
+                },
                 {
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "repo: ${{ github.event.workflow_run.repository.name }}\nurl: ${{ github.event.workflow_run.html_url }}"
+                    "text": "repo: ${{ github.event.workflow_run.repository.html_url }}\njob url: ${{ github.event.workflow_run.html_url }}"
                   }
                 }
               ]
