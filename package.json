@@ -2,7 +2,7 @@
   "name": "@salesforce/test-plugin117",
   "version": "1.9.14",
   "author": "Vamsi-Mundra-Salesforce",
-  "bugs": "https://github.com/vmundra/testPlugin117/issues",
+  "bugs": "https://github.com/salesforcecli/testPackageRelease/issues",
   "dependencies": {
     "@oclif/core": "^1",
     "@salesforce/command": "^5.2.6",
@@ -48,7 +48,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/vmundra/testPlugin117",
+  "homepage": "https://github.com/salesforcecli/testPackageRelease",
   "keywords": [
     "sfdx-plugin"
   ],
@@ -67,7 +67,7 @@
       "@salesforce/plugin-command-reference"
     ]
   },
-  "repository": "vmundra/testPlugin117",
+  "repository": "salesforcecli/testPackageRelease",
   "scripts": {
     "build": "sf-build",
     "ci-docs": "yarn sf-ci-docs",
