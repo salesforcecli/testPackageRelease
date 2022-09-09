@@ -4,5 +4,5 @@ on:
 
 jobs:
   update:
-    uses: salesforcecli/github-workflows/.github/workflows/devScrips/Update.yml@main
+    uses: salesforcecli/github-workflows/.github/workflows/devScriptsUpdate.yml@main
     secrets: inherit
