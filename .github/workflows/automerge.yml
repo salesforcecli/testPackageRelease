@@ -1,3 +1,5 @@
+# test
+
 name: automerge
 on:
   workflow_dispatch:
