@@ -1,8 +1,8 @@
-name: automerge
+name: devScripts
 on:
   workflow_dispatch:
 
 jobs:
-  automerge:
+  update:
     uses: salesforcecli/github-workflows/.github/workflows/devScrips/Update.yml@main
     secrets: inherit
