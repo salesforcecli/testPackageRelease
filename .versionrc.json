@@ -34,7 +34,7 @@
     },
     {
       "type": "build",
-      "hidden": "Dependency Updates"
+      "section": "Dependency Updates"
     }
   ]
 }
