@@ -19,7 +19,6 @@ jobs:
           output-file: false
           # always do the release, even if there are no semantic commits
           skip-on-empty: false
-          # avoids the default `v` so all the later actions don't have to remove it
           tag-prefix: ''
       - uses: notiz-dev/github-action-json-property@2192e246737701f108a4571462b76c75e7376216
         id: packageVersion
