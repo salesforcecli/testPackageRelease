@@ -17,6 +17,7 @@ jobs:
     outputs:
       tag: ${{ steps.versionSuffix.outputs.match }}
     steps:
+      - uses: actions/checkout@v3
       - uses: notiz-dev/github-action-json-property@2192e246737701f108a4571462b76c75e7376216
         id: packageVersion
         with:
