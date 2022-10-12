@@ -2,6 +2,11 @@ name: version, tag and github release
 
 on:
   push:
+    branches:
+      - main,
+      - prerelease/test
+    tags-ignore:
+      - '*'
 
 jobs:
   release:
