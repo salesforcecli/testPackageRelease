@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main,
-      - prerelease/test
       - prerelease/*
     tags-ignore:
       - '*'
