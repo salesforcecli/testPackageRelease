@@ -4,7 +4,7 @@ name: version, tag and github release
 on:
   push:
     branches:
-      - main,
+      - main
       - prerelease/*
     tags-ignore:
       - '*'
