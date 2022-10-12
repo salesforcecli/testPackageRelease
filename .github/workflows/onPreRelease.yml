@@ -11,29 +11,16 @@ on:
         type: string
         required: true
 jobs:
-  whatsTheTag:
+  getDistTag:
     runs-on: ubuntu-latest
-    outputs:
-      tag: ${{ steps.versionSuffix.outputs.match }}
     steps:
       - uses: actions/checkout@v3
-      - uses: notiz-dev/github-action-json-property@2192e246737701f108a4571462b76c75e7376216
-        id: packageVersion
-        with:
-          path: 'package.json'
-          prop_path: 'version'
-      - run: echo "found version ${{ steps.packageVersion.outputs.prop  }}"
-      - uses: actions-ecosystem/action-regex-match@9e6c4fb3d5e898f505be7a1fb6e7b0a278f6665b
-        id: versionSuffix
-        with:
-          text: ${{ steps.packageVersion.outputs.prop }}
-          regex: '(?<=\d*\.\d*\.\d*-).*(?=\.\d)'
-      - run: echo "found tag ${{ steps.versionSuffix.outputs.match }}"
+      - uses: salesforcecli/github-workflows/.github/actions/getPrereleaseTag@prerelease-cca
   npm:
     uses: salesforcecli/github-workflows/.github/workflows/npmPublish.yml@main
-    needs: [whatsTheTag]
+    needs: [getDistTag]
     with:
-      tag: ${{ needs.whatsTheTag.outputs.tag }}
+      tag: ${{ needs.getDistTag.outputs.tag }}
       githubTag: ${{ github.event.release.tag_name || inputs.tag }}
 
     secrets: inherit
