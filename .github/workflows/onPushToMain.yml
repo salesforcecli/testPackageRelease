@@ -10,7 +10,7 @@ on:
 
 jobs:
   release:
-    uses: salesforcecli/github-workflows/.github/workflows/githubRelease.yml@prerelease
+    uses: salesforcecli/github-workflows/.github/workflows/githubRelease.yml@prerelease-cca
     secrets: inherit
     with:
       prerelease: ${{ github.ref_name != 'main' }}
