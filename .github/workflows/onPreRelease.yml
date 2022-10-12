@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: salesforcecli/github-workflows/.github/actions/getPrereleaseTag@prerelease-cca
+      - uses: salesforcecli/github-workflows/.github/actions/getPreReleaseTag@prerelease-cca
   npm:
     uses: salesforcecli/github-workflows/.github/workflows/npmPublish.yml@main
     needs: [getDistTag]
