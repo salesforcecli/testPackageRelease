@@ -1,3 +1,12 @@
+# [1.45.0](https://github.com/salesforcecli/testPackageRelease/compare/1.44.0...1.45.0) (2022-12-08)
+
+
+### Features
+
+* another changelog ([9b908d4](https://github.com/salesforcecli/testPackageRelease/commit/9b908d4312e3e3f07922428e015ce1f794e8dcf0))
+
+
+
 # [1.44.0](https://github.com/salesforcecli/testPackageRelease/compare/1.43.0...1.44.0) (2022-12-08)
 
 
@@ -31,16 +40,6 @@
 ### Bug Fixes
 
 * main check ([511d8fc](https://github.com/salesforcecli/testPackageRelease/commit/511d8fcb08e79026fe2fd416737355950429d725))
-
-
-
-## [1.24.2](https://github.com/salesforcecli/testPackageRelease/compare/1.24.1-dev...1.24.2) (2022-10-12)
-
-
-### Bug Fixes
-
-* correct main branch name ([6d1c6fd](https://github.com/salesforcecli/testPackageRelease/commit/6d1c6fdec2c3e95d62ad1036a7297dee24a322cf))
-* publish to latest ([4c9350e](https://github.com/salesforcecli/testPackageRelease/commit/4c9350e5bb5884d3af65757d41a0f5468a4ff4c4))
 
 
 
