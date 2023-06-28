@@ -1,3 +1,12 @@
+## [1.45.2](https://github.com/salesforcecli/testPackageRelease/compare/1.45.1...1.45.2) (2023-06-28)
+
+
+### Bug Fixes
+
+* switch to tripss ([2271003](https://github.com/salesforcecli/testPackageRelease/commit/22710030cd538020f4f3590cd32d3aff43f2b352))
+
+
+
 ## [1.45.1](https://github.com/salesforcecli/testPackageRelease/compare/1.45.0...1.45.1) (2022-12-08)
 
 
