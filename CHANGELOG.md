@@ -1,3 +1,13 @@
+## [1.45.3](https://github.com/salesforcecli/testPackageRelease/compare/1.45.2...1.45.3) (2023-06-29)
+
+
+### Bug Fixes
+
+* move manual release to reusable workflow ([ce27477](https://github.com/salesforcecli/testPackageRelease/commit/ce2747754b08e647d8539fe1068f5085c149110f))
+* prerelease ([519b471](https://github.com/salesforcecli/testPackageRelease/commit/519b4712840f654991ba34b3dfb291820585bccd))
+
+
+
 ## [1.45.2](https://github.com/salesforcecli/testPackageRelease/compare/1.45.1...1.45.2) (2023-06-28)
 
 
