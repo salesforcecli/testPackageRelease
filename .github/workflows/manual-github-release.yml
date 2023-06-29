@@ -7,14 +7,16 @@ on:
         type: string
         description: 'Name to use for the prerelease: beta, dev, etc.'
 
-## TODO: Dont allow prerelease on main branch
 jobs:
   validate:
-    if: github.ref_name == 'main' && inputs.prerelease
-    uses: actions/github-script@v3
-    with:
-      script: |
-        core.setFailed('Cannot create a prerelease on the main branch')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate prerelease
+        if: github.ref_name == 'main' && inputs.prerelease
+        uses: actions/github-script@v3
+        with:
+          script: |
+            core.setFailed('Cannot create a prerelease on the main branch')
   release:
     uses: salesforcecli/github-workflows/.github/workflows/create-github-release.yml@ew/tripss
     secrets: inherit
