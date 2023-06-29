@@ -1,3 +1,7 @@
+## [1.45.9](https://github.com/salesforcecli/testPackageRelease/compare/1.45.8...1.45.9) (2023-06-29)
+
+
+
 ## [1.45.8](https://github.com/salesforcecli/testPackageRelease/compare/1.45.7...1.45.8) (2023-06-29)
 
 
