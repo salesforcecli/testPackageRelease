@@ -1,3 +1,23 @@
+## [1.45.6](https://github.com/salesforcecli/testPackageRelease/compare/1.45.6-test.3...1.45.6) (2023-06-29)
+
+
+
+## [1.45.6-test.3](https://github.com/salesforcecli/testPackageRelease/compare/1.45.6-test.2...1.45.6-test.3) (2023-06-29)
+
+
+
+## [1.45.6-test.2](https://github.com/salesforcecli/testPackageRelease/compare/1.45.6-test.1...1.45.6-test.2) (2023-06-29)
+
+
+
+## [1.45.6-test.1](https://github.com/salesforcecli/testPackageRelease/compare/1.45.6-test.0...1.45.6-test.1) (2023-06-29)
+
+
+
+## [1.45.6-test.0](https://github.com/salesforcecli/testPackageRelease/compare/1.45.5...1.45.6-test.0) (2023-06-29)
+
+
+
 ## [1.45.5](https://github.com/salesforcecli/testPackageRelease/compare/1.45.4...1.45.5) (2023-06-29)
 
 
