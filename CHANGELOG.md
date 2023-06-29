@@ -1,3 +1,12 @@
+## [1.45.4](https://github.com/salesforcecli/testPackageRelease/compare/1.45.3...1.45.4) (2023-06-29)
+
+
+### Bug Fixes
+
+* steps ([5d1a4e9](https://github.com/salesforcecli/testPackageRelease/commit/5d1a4e969b5c52744f6836ecdf760a7484421512))
+
+
+
 ## [1.45.3](https://github.com/salesforcecli/testPackageRelease/compare/1.45.2...1.45.3) (2023-06-29)
 
 
