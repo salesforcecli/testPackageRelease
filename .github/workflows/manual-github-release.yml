@@ -1,0 +1,25 @@
+name: manual-github-release
+
+on:
+  workflow_dispatch:
+    inputs:
+      prerelease:
+        type: string
+        description: 'Name to use for the prerelease: beta, dev, etc.'
+
+## TODO: Dont allow prerelease on main branch
+jobs:
+  validate:
+    if: github.ref_name == 'main' && inputs.prerelease
+    uses: actions/github-script@v3
+    with:
+      script: |
+        core.setFailed('Cannot create a prerelease on the main branch')
+  release:
+    uses: salesforcecli/github-workflows/.github/workflows/create-github-release.yml@ew/tripss
+    secrets: inherit
+    with:
+      prerelease: ${{ inputs.prerelease }}
+      # Always do the release, even if there are no semantic commits
+      # This helps recover from accidentally forgetting to add 'fix:', 'feat:', etc.
+      skip-on-empty: false
