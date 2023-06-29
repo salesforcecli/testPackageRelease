@@ -1,3 +1,13 @@
+## [1.45.7](https://github.com/salesforcecli/testPackageRelease/compare/1.45.6...1.45.7) (2023-06-29)
+
+
+### Bug Fixes
+
+* combine release workflows ([7d8a31f](https://github.com/salesforcecli/testPackageRelease/commit/7d8a31f21521990b10fcbc7211d364b4e77667c7))
+* string to bool, this might not work ([90babfa](https://github.com/salesforcecli/testPackageRelease/commit/90babfacfb5155fb1fd03e6b0f8a90ec675572b3))
+
+
+
 ## [1.45.6](https://github.com/salesforcecli/testPackageRelease/compare/1.45.6-test.3...1.45.6) (2023-06-29)
 
 
