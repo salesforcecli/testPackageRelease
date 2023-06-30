@@ -1,6 +1,6 @@
 # testPlugin117
 
-foo1
+foo2
 
 [![Version](https://img.shields.io/npm/v/testPlugin117.svg)](https://npmjs.org/package/testPlugin117)
 [![CircleCI](https://circleci.com/gh/vmundra/testPlugin117/tree/master.svg?style=shield)](https://circleci.com/gh/vmundra/testPlugin117/tree/master)
