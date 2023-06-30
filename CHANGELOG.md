@@ -1,3 +1,16 @@
+# [1.46.0](https://github.com/salesforcecli/testPackageRelease/compare/1.45.10-test.0...1.46.0) (2023-06-30)
+
+
+
+## [1.45.10-test.0](https://github.com/salesforcecli/testPackageRelease/compare/1.45.9...1.45.10-test.0) (2023-06-30)
+
+
+### Features
+
+* foo ([e4a54ca](https://github.com/salesforcecli/testPackageRelease/commit/e4a54ca175fcd6b768322702da31ef224393c306))
+
+
+
 ## [1.45.9](https://github.com/salesforcecli/testPackageRelease/compare/1.45.8...1.45.9) (2023-06-29)
 
 
