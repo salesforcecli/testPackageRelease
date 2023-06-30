@@ -1,3 +1,12 @@
+## [1.46.2](https://github.com/salesforcecli/testPackageRelease/compare/1.46.1...1.46.2) (2023-06-30)
+
+
+### Bug Fixes
+
+* action branch ([9549ac1](https://github.com/salesforcecli/testPackageRelease/commit/9549ac11a5e246c222bf1d408ce1290feccbb7fa))
+
+
+
 ## [1.46.1](https://github.com/salesforcecli/testPackageRelease/compare/1.46.0...1.46.1) (2023-06-30)
 
 
