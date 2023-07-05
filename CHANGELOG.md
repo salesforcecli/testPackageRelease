@@ -1,3 +1,21 @@
+# [1.48.0](https://github.com/salesforcecli/testPackageRelease/compare/1.47.2-beta.0...1.48.0) (2023-07-05)
+
+
+
+## [1.47.2-beta.0](https://github.com/salesforcecli/testPackageRelease/compare/1.47.1...1.47.2-beta.0) (2023-07-05)
+
+
+### Bug Fixes
+
+* another ([21bc2f5](https://github.com/salesforcecli/testPackageRelease/commit/21bc2f5058a3814d0209e88ce5881d6116be90c8))
+
+
+### Features
+
+* another ([f7eb1bd](https://github.com/salesforcecli/testPackageRelease/commit/f7eb1bd6554dad388fc296ae8d28b975dc61a328))
+
+
+
 ## [1.47.1](https://github.com/salesforcecli/testPackageRelease/compare/1.47.0...1.47.1) (2023-07-05)
 
 
