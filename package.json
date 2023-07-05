@@ -1,6 +1,6 @@
 {
   "name": "@salesforce/test-plugin117",
-  "version": "1.47.1",
+  "version": "1.47.2-dev.0",
   "author": "Vamsi-Mundra-Salesforce",
   "bugs": "https://github.com/salesforcecli/testPackageRelease/issues",
   "dependencies": {
