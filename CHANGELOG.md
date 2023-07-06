@@ -1,9 +1,35 @@
-# [1.49.0](https://github.com/salesforcecli/testPackageRelease/compare/1.48.0...1.49.0) (2023-07-06)
+# [1.50.0](https://github.com/salesforcecli/testPackageRelease/compare/1.49.1-dev.0...1.50.0) (2023-07-06)
+
+
+
+## [1.49.1-dev.0](https://github.com/salesforcecli/testPackageRelease/compare/1.49.0...1.49.1-dev.0) (2023-07-06)
+
+
+
+## [1.48.1-dev.0](https://github.com/salesforcecli/testPackageRelease/compare/1.48.0...1.48.1-dev.0) (2023-07-06)
+
+
+### Features
+
+* foo ([b12af81](https://github.com/salesforcecli/testPackageRelease/commit/b12af810729494db3ec5dacaf0cd2f01334c196d))
+
+
+
+# [1.49.0](https://github.com/salesforcecli/testPackageRelease/compare/1.48.1-dev.0...1.49.0) (2023-07-06)
 
 
 ### Features
 
 * foo ([4fc1a63](https://github.com/salesforcecli/testPackageRelease/commit/4fc1a63cdc8364d5e86d7e4387457059f5291180))
+
+
+
+## [1.48.1-dev.0](https://github.com/salesforcecli/testPackageRelease/compare/1.48.0...1.48.1-dev.0) (2023-07-06)
+
+
+### Features
+
+* foo ([b12af81](https://github.com/salesforcecli/testPackageRelease/commit/b12af810729494db3ec5dacaf0cd2f01334c196d))
 
 
 
