@@ -1,3 +1,13 @@
+## [1.50.1](https://github.com/salesforcecli/testPackageRelease/compare/1.50.0...1.50.1) (2023-07-14)
+
+
+### Bug Fixes
+
+* gh-release on main ([696d31b](https://github.com/salesforcecli/testPackageRelease/commit/696d31b8e5c11991ed3169c5e5e5f7bab20202be))
+* test publish without CLI ([2dd06b4](https://github.com/salesforcecli/testPackageRelease/commit/2dd06b45c1fd733667271461fbae165e7cfcc7f8))
+
+
+
 # [1.50.0](https://github.com/salesforcecli/testPackageRelease/compare/1.49.1-dev.0...1.50.0) (2023-07-06)
 
 
