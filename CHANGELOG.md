@@ -1,3 +1,11 @@
+## [1.50.2](https://github.com/salesforcecli/testPackageRelease/compare/1.50.2-major.0...1.50.2) (2023-08-29)
+
+
+
+## [1.50.2-major.0](https://github.com/salesforcecli/testPackageRelease/compare/1.50.1...1.50.2-major.0) (2023-08-29)
+
+
+
 ## [1.50.1](https://github.com/salesforcecli/testPackageRelease/compare/1.50.0...1.50.1) (2023-07-14)
 
 
