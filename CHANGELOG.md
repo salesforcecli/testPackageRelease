@@ -1,3 +1,19 @@
+# [3.0.0](https://github.com/salesforcecli/testPackageRelease/compare/2.0.1-major.0...3.0.0) (2023-08-29)
+
+
+
+## [2.0.1-major.0](https://github.com/salesforcecli/testPackageRelease/compare/2.0.0...2.0.1-major.0) (2023-08-29)
+
+
+* feat!: test-major ([d5d84fb](https://github.com/salesforcecli/testPackageRelease/commit/d5d84fbf1f04768efd7587187bd5b1065641d750))
+
+
+### BREAKING CHANGES
+
+* testing major
+
+
+
 # [2.0.0](https://github.com/salesforcecli/testPackageRelease/compare/1.50.2...2.0.0) (2023-08-29)
 
 
