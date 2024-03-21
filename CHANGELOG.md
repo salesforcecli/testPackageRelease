@@ -1,3 +1,12 @@
+## [3.2.4](https://github.com/salesforcecli/testPackageRelease/compare/3.2.4-dev.0...3.2.4) (2024-03-21)
+
+## [3.2.4-dev.0](https://github.com/salesforcecli/testPackageRelease/compare/3.2.3...3.2.4-dev.0) (2024-03-21)
+
+### Bug Fixes
+
+- old branch ([c5d4115](https://github.com/salesforcecli/testPackageRelease/commit/c5d4115f049ceac804c42fc8ef021a43c158227f))
+- readme ([037fc8f](https://github.com/salesforcecli/testPackageRelease/commit/037fc8f3f15608648890d06f53dc03dd4a33b7ed))
+
 ## [3.2.3](https://github.com/salesforcecli/testPackageRelease/compare/3.2.2...3.2.3) (2024-02-02)
 
 ### Bug Fixes
