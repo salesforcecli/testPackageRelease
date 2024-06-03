@@ -1,3 +1,9 @@
+## [3.3.11](https://github.com/salesforcecli/testPackageRelease/compare/3.3.10...3.3.11) (2024-06-03)
+
+### Bug Fixes
+
+- add a comment ([2191558](https://github.com/salesforcecli/testPackageRelease/commit/2191558788d4436bf22adab1a4b1ade38d930c85))
+
 ## [3.3.10](https://github.com/salesforcecli/testPackageRelease/compare/3.3.9...3.3.10) (2024-06-03)
 
 ### Bug Fixes
