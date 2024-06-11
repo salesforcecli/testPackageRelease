@@ -1,3 +1,9 @@
+## [3.3.12](https://github.com/salesforcecli/testPackageRelease/compare/3.3.11...3.3.12) (2024-06-11)
+
+### Bug Fixes
+
+- slack-api update ([ccd8f83](https://github.com/salesforcecli/testPackageRelease/commit/ccd8f834fef2e529b33507ee8b49beb8fdd6c6cd))
+
 ## [3.3.11](https://github.com/salesforcecli/testPackageRelease/compare/3.3.10...3.3.11) (2024-06-03)
 
 ### Bug Fixes
