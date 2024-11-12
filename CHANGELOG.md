@@ -1,3 +1,9 @@
+## [3.3.14](https://github.com/salesforcecli/testPackageRelease/compare/3.3.13...3.3.14) (2024-11-12)
+
+### Bug Fixes
+
+- shove ([8f5f9b4](https://github.com/salesforcecli/testPackageRelease/commit/8f5f9b4608ad52bbc3b7920a8c10fc1ba1d87c33))
+
 ## [3.3.13](https://github.com/salesforcecli/testPackageRelease/compare/3.3.12...3.3.13) (2024-11-12)
 
 ### Bug Fixes
