@@ -1,3 +1,9 @@
+## [3.3.15](https://github.com/salesforcecli/testPackageRelease/compare/3.3.14...3.3.15) (2024-11-20)
+
+### Bug Fixes
+
+- readme ([94b8415](https://github.com/salesforcecli/testPackageRelease/commit/94b841545e5b625dc06fe4e3b234e9dcf368fcaf))
+
 ## [3.3.14](https://github.com/salesforcecli/testPackageRelease/compare/3.3.13...3.3.14) (2024-11-12)
 
 ### Bug Fixes
