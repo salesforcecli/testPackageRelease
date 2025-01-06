@@ -1,3 +1,9 @@
+# [3.4.0](https://github.com/salesforcecli/testPackageRelease/compare/3.3.15...3.4.0) (2025-01-06)
+
+### Features
+
+- testing minor ([0e92987](https://github.com/salesforcecli/testPackageRelease/commit/0e92987dbc10a765d93b881e80e31859a683d42d))
+
 ## [3.3.15](https://github.com/salesforcecli/testPackageRelease/compare/3.3.14...3.3.15) (2024-11-20)
 
 ### Bug Fixes
