@@ -1,3 +1,9 @@
+## [4.0.1](https://github.com/salesforcecli/testPackageRelease/compare/4.0.0...4.0.1) (2025-10-07)
+
+### Bug Fixes
+
+- test ctc ([240c147](https://github.com/salesforcecli/testPackageRelease/commit/240c147061014a6f53d06f923425b84d6a6c4d26))
+
 # [4.0.0](https://github.com/salesforcecli/testPackageRelease/compare/3.4.5...4.0.0) (2025-04-10)
 
 ### Bug Fixes
