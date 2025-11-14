@@ -1,6 +1,6 @@
 {
   "name": "@salesforce/test-plugin117",
-  "version": "4.0.2-jftest.0",
+  "version": "4.0.2-jf3.0",
   "author": "Vamsi-Mundra-Salesforce",
   "bugs": "https://github.com/salesforcecli/testPackageRelease/issues",
   "dependencies": {
