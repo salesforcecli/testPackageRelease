@@ -1,3 +1,9 @@
+## [4.0.3](https://github.com/salesforcecli/testPackageRelease/compare/4.0.2...4.0.3) (2026-03-03)
+
+### Bug Fixes
+
+- test prelease ([4245706](https://github.com/salesforcecli/testPackageRelease/commit/42457066f407b086b4d63879aa3ba76724ab2088))
+
 ## [4.0.2](https://github.com/salesforcecli/testPackageRelease/compare/4.0.1...4.0.2) (2026-02-13)
 
 ## [4.0.1](https://github.com/salesforcecli/testPackageRelease/compare/4.0.0...4.0.1) (2025-10-07)
