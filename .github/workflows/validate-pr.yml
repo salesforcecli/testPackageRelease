@@ -8,4 +8,4 @@ on:
 
 jobs:
   pr-validation:
-    uses: salesforcecli/github-workflows/.github/workflows/validatePR.yml@d-W23251216
+    uses: salesforcecli/github-workflows/.github/workflows/validatePR.yml@d/W-23251216
