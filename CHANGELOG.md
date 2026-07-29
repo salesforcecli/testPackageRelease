@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/salesforcecli/testPackageRelease/compare/4.0.3...5.0.0) (2026-07-29)
+
+- feat!: trigger major version release ([da28be5](https://github.com/salesforcecli/testPackageRelease/commit/da28be57981e5ca75ec1c2e87a0b1b86ceabc29c))
+
+### Features
+
+- branch ([bcb1b5e](https://github.com/salesforcecli/testPackageRelease/commit/bcb1b5e6cebefb374a0b89b9de9d2d9ac72a71b7))
+
+### BREAKING CHANGES
+
+- this commit intentionally introduces a breaking change to test that the conventional-commits changelog action publishes a new major version.
+
 ## [4.0.3](https://github.com/salesforcecli/testPackageRelease/compare/4.0.2...4.0.3) (2026-03-03)
 
 ### Bug Fixes
