@@ -33,7 +33,6 @@
   "files": [
     "/lib",
     "/messages",
-    "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
   "homepage": "https://github.com/salesforcecli/testPackageRelease",
