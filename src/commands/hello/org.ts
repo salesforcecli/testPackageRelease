@@ -1,54 +1,71 @@
 /*
- * Copyright (c) 2020, salesforce.com, inc.
- * All rights reserved.
- * Licensed under the BSD 3-Clause license.
- * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+ * Copyright 2025, Salesforce, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
-import * as os from 'os';
-import { flags, SfdxCommand } from '@salesforce/command';
-import { Messages, SfdxError } from '@salesforce/core';
-import { AnyJson } from '@salesforce/ts-types';
+import { Args } from '@oclif/core';
+import { Messages, SfError } from '@salesforce/core';
+import {
+  Flags,
+  SfCommand,
+  optionalHubFlagWithDeprecations,
+  orgApiVersionFlagWithDeprecations,
+  requiredOrgFlagWithDeprecations,
+} from '@salesforce/sf-plugins-core';
 
 // Initialize Messages with the current plugin directory
-Messages.importMessagesDirectory(__dirname);
+Messages.importMessagesDirectoryFromMetaUrl(import.meta.url);
 
-// Load the specific messages for this file. Messages from @salesforce/command, @salesforce/core,
+// Load the specific messages for this file. Messages from @salesforce/core,
 // or any library that is using the messages framework can also be loaded this way.
 const messages = Messages.loadMessages('@salesforce/test-plugin117', 'org');
 
-export default class Org extends SfdxCommand {
-  public static description = messages.getMessage('commandDescription');
+export type HelloOrgResult = {
+  orgId: string;
+  outputString: string;
+};
 
-  public static examples = messages.getMessage('examples').split(os.EOL);
+export default class Org extends SfCommand<HelloOrgResult> {
+  public static readonly summary = messages.getMessage('commandDescription');
 
-  public static args = [{ name: 'file' }];
+  public static readonly examples = messages.getMessages('examples');
 
-  protected static flagsConfig = {
-    // flag with a value (-n, --name=VALUE)
-    name: flags.string({
-      char: 'n',
-      description: messages.getMessage('nameFlagDescription'),
-    }),
-    force: flags.boolean({
-      char: 'f',
-      description: messages.getMessage('forceFlagDescription'),
-    }),
+  public static readonly args = {
+    file: Args.string(),
   };
 
-  // Comment this out if your command does not require an org username
-  protected static requiresUsername = true;
+  public static readonly flags = {
+    // flag with a value (-n, --name=VALUE)
+    name: Flags.string({
+      char: 'n',
+      summary: messages.getMessage('nameFlagDescription'),
+    }),
+    force: Flags.boolean({
+      char: 'f',
+      summary: messages.getMessage('forceFlagDescription'),
+    }),
+    'target-org': requiredOrgFlagWithDeprecations,
+    // Comment this out if your command does not support a hub org username
+    'target-dev-hub': optionalHubFlagWithDeprecations,
+    'api-version': orgApiVersionFlagWithDeprecations,
+  };
 
-  // Comment this out if your command does not support a hub org username
-  protected static supportsDevhubUsername = true;
+  public async run(): Promise<HelloOrgResult> {
+    const { args, flags } = await this.parse(Org);
+    const name = flags.name ?? 'world';
 
-  // Set this to true if your command requires a project workspace; 'requiresProject' is false by default
-  protected static requiresProject = false;
-
-  public async run(): Promise<AnyJson> {
-    const name = (this.flags.name || 'world') as string;
-
-    // this.org is guaranteed because requiresUsername=true, as opposed to supportsUsername
-    const conn = this.org.getConnection();
+    const org = flags['target-org'];
+    const conn = org.getConnection();
     const query = 'Select Name, TrialExpirationDate from Organization';
 
     // The type we are querying for
@@ -63,7 +80,7 @@ export default class Org extends SfdxCommand {
     // Organization will always return one result, but this is an example of throwing an error
     // The output and --json will automatically be handled for you.
     if (!result.records || result.records.length <= 0) {
-      throw new SfdxError(messages.getMessage('errorNoOrgResults', [this.org.getOrgId()]));
+      throw new SfError(messages.getMessage('errorNoOrgResults', [org.getOrgId()]));
     }
 
     // Organization always only returns one result
@@ -75,19 +92,19 @@ export default class Org extends SfdxCommand {
       const date = new Date(trialExpirationDate).toDateString();
       outputString = `${outputString} and I will be around until ${date}!`;
     }
-    this.ux.log(outputString);
+    this.log(outputString);
 
-    // this.hubOrg is NOT guaranteed because supportsHubOrgUsername=true, as opposed to requiresHubOrgUsername.
-    if (this.hubOrg) {
-      const hubOrgId = this.hubOrg.getOrgId();
-      this.ux.log(`My hub org id is: ${hubOrgId}`);
+    // the hub org is NOT guaranteed because target-dev-hub is optional.
+    const hubOrg = flags['target-dev-hub'];
+    if (hubOrg) {
+      this.log(`My hub org id is: ${hubOrg.getOrgId()}`);
     }
 
-    if (this.flags.force && this.args.file) {
-      this.ux.log(`You input --force and a file: ${this.args.file as string}`);
+    if (flags.force && args.file) {
+      this.log(`You input --force and a file: ${args.file}`);
     }
 
     // Return an object to be displayed with --json
-    return { orgId: this.org.getOrgId(), outputString };
+    return { orgId: org.getOrgId(), outputString };
   }
 }

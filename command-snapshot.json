@@ -1,8 +1,10 @@
 [
   {
+    "alias": [],
     "command": "hello:org",
-    "plugin": "@salesforce/test-plugin117",
-    "flags": ["apiversion", "force", "json", "loglevel", "name", "targetdevhubusername", "targetusername"],
-    "alias": []
+    "flagAliases": ["apiversion", "targetdevhubusername", "targetusername", "u"],
+    "flagChars": ["f", "n", "o", "v"],
+    "flags": ["api-version", "flags-dir", "force", "json", "name", "target-dev-hub", "target-org"],
+    "plugin": "@salesforce/test-plugin117"
   }
 ]
