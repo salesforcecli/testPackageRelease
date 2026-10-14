@@ -69,6 +69,7 @@
     "prepack": "sf-prepack",
     "prepare": "sf-install",
     "test": "wireit",
+    "test:nuts": "echo \"no NUTs in this repo\" && exit 0",
     "test:only": "wireit",
     "version": "oclif readme"
   },
