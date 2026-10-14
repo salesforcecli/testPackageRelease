@@ -1,3 +1,11 @@
+## [5.0.1](https://github.com/salesforcecli/testPackageRelease/compare/5.0.0...5.0.1) (2026-10-14)
+
+### Bug Fixes
+
+- add test:nuts script so nuts workflow passes ([e26a4d9](https://github.com/salesforcecli/testPackageRelease/commit/e26a4d99ed475b749891e62ad5b154fc5a9062c7))
+- remove npm-shrinkwrap from package files ([44fa884](https://github.com/salesforcecli/testPackageRelease/commit/44fa8843781ee69930cca2442e067ddc2880b6b1))
+- upgrade package for latest deps versions ([dbdeb7a](https://github.com/salesforcecli/testPackageRelease/commit/dbdeb7a0dd5be2213e9a2ee84240874750d5aa07))
+
 # [5.0.0](https://github.com/salesforcecli/testPackageRelease/compare/4.0.3...5.0.0) (2026-07-29)
 
 - feat!: trigger major version release ([da28be5](https://github.com/salesforcecli/testPackageRelease/commit/da28be57981e5ca75ec1c2e87a0b1b86ceabc29c))
