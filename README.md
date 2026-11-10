@@ -15,15 +15,15 @@ foo39
 - [testPlugin117](#testplugin117)
 - [Debugging your plugin](#debugging-your-plugin)
   <!-- tocstop -->
-    <!-- install -->
-    <!-- usage -->
+      <!-- install -->
+      <!-- usage -->
 
 ```sh-session
 $ npm install -g @salesforce/test-plugin117
 $ sfdx COMMAND
 running command...
 $ sfdx (--version)
-@salesforce/test-plugin117/5.0.1 linux-x64 node-v22.23.3
+@salesforce/test-plugin117/5.0.2 linux-x64 node-v24.22.2
 $ sfdx --help [COMMAND]
 USAGE
   $ sfdx COMMAND
@@ -62,7 +62,7 @@ EXAMPLES
   sf hello org --name myname --target-org myOrg@example.com
 ```
 
-_See code: [src/commands/hello/org.ts](https://github.com/salesforcecli/testPackageRelease/blob/5.0.1/src/commands/hello/org.ts)_
+_See code: [src/commands/hello/org.ts](https://github.com/salesforcecli/testPackageRelease/blob/5.0.2/src/commands/hello/org.ts)_
 
 <!-- commandsstop -->
 <!-- debugging-your-plugin -->
